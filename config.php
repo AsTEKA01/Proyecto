@@ -1,9 +1,9 @@
 <?php
 date_default_timezone_set('America/Lima');
 session_start();
-define('RUTA', 'mysql://root:IwVBmvAPTVYjgVfWShWKBtZHtMieTeSw@mysql.railway.internal:3306/railway');
-define('DB_HOST', 'mysql.railway.internal');
-define('DB_USER', 'root');
-define('DB_NAME', 'railway');
-define('DB_PASS', 'IwVBmvAPTVYjgVfWShWKBtZHtMieTeSw');
+define('DB_HOST', 'sql301.infinityfree.com');
+define('DB_PORT', '3306');
+define('DB_USER', 'if0_37292355');
+define('DB_NAME', 'if0_37292355_assiscor');
+define('DB_PASS', 'aWwHrf2jjOF');
 ?>

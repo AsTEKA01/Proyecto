@@ -1,3 +1,7 @@
+<?php
+define('RUTA', 'http://18.218.6.249'); // Asegúrate de que RUTA esté definida
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,8 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link rel="stylesheet" href="<?php echo RUTA . 'assets/'; ?>css/snackbar.min.css">
-    <link href="<?php echo RUTA . 'assets/index/'; ?>css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="<?php echo RUTA . 'assets/css/snackbar.min.css'; ?>">
+    <link href="<?php echo RUTA . 'assets/index/css/styles.css'; ?>" rel="stylesheet" />
 </head>
 
 <body>
@@ -46,7 +50,7 @@
                     </div>
                 </div>
                 <h1 class="fst-italic lh-1 mb-4">ASSISCOR</h1>
-                <p class="mb-5">Entradas y salidas de las personas</p>
+                <p class="mb-5">Entradas y salidas de los usuarios</p>
                 <form id="contactForm" autocomplete="off">
                     <!-- Email address input-->
                     <div class="row input-group-newsletter">

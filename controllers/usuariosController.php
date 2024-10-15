@@ -53,7 +53,7 @@ switch ($option) {
                 $hash = password_hash($clave, PASSWORD_DEFAULT);
                 $result = $usuarios->saveUser($nombre, $correo, $hash, $direccion);
                 if ($result) {
-                    $res = array('tipo' => 'success', 'mensaje' => 'USUARIO REGISTRADO');
+                    $res = array('tipo' => 'success', 'mensaje' => 'ADMINISTRADOR REGISTRADO');
                 } else {
                     $res = array('tipo' => 'error', 'mensaje' => 'ERROR AL AGREGAR');
                 }
@@ -63,7 +63,7 @@ switch ($option) {
         } else {
             $result = $usuarios->updateUser($nombre, $correo, $direccion, $id_user);
             if ($result) {
-                $res = array('tipo' => 'success', 'mensaje' => 'USUARIO MODIFICADO');
+                $res = array('tipo' => 'success', 'mensaje' => 'ADMINISTRADOR MODIFICADO');
             } else {
                 $res = array('tipo' => 'error', 'mensaje' => 'ERROR AL MODIFICAR');
             }
@@ -74,7 +74,7 @@ switch ($option) {
         $id = $_GET['id'];
         $data = $usuarios->deleteUser($id);
         if ($data) {
-            $res = array('tipo' => 'success', 'mensaje' => 'USUARIO ELIMINADO');
+            $res = array('tipo' => 'success', 'mensaje' => 'ADMINISTRADOR ELIMINADO');
         } else {
             $res = array('tipo' => 'error', 'mensaje' => 'ERROR AL ELIMINAR');
         }

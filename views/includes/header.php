@@ -51,7 +51,7 @@
           </a>
           <div class="collapse" id="ui-basic">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="?pagina=usuarios">Usuarios</a></li>
+              <li class="nav-item"> <a class="nav-link" href="?pagina=usuarios">Administradores</a></li>
               <li class="nav-item"> <a class="nav-link" href="?pagina=configuracion">Configuracion</a></li>
             </ul>
           </div>

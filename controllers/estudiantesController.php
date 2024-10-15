@@ -32,7 +32,7 @@ switch ($option) {
             if (empty($consult)) {
                 $result = $estudiantes->save($codigo, $nombre, $apellido, $telefono, $direccion, $carrera, $nivel);
                 if ($result) {
-                    $res = array('tipo' => 'success', 'mensaje' => 'ESTUDIANTE REGISTRADO');
+                    $res = array('tipo' => 'success', 'mensaje' => 'USUARIO REGISTRADO');
                 } else {
                     $res = array('tipo' => 'error', 'mensaje' => 'ERROR AL AGREGAR');
                 }
@@ -44,7 +44,7 @@ switch ($option) {
             if (empty($consult)) {
                 $result = $estudiantes->update($codigo, $nombre, $apellido, $telefono, $direccion, $carrera, $nivel, $id_estudiante);
                 if ($result) {
-                    $res = array('tipo' => 'success', 'mensaje' => 'ESTUDIANTE MODIFICADO');
+                    $res = array('tipo' => 'success', 'mensaje' => 'USUARIO MODIFICADO');
                 } else {
                     $res = array('tipo' => 'error', 'mensaje' => 'ERROR AL MODIFICAR');
                 }
@@ -58,7 +58,7 @@ switch ($option) {
         $id = $_GET['id'];
         $data = $estudiantes->delete($id);
         if ($data) {
-            $res = array('tipo' => 'success', 'mensaje' => 'ESTUDIANTE ELIMINADO');
+            $res = array('tipo' => 'success', 'mensaje' => 'USUARIO ELIMINADO');
         } else {
             $res = array('tipo' => 'error', 'mensaje' => 'ERROR AL ELIMINAR');
         }
